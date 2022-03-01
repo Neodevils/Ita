@@ -1,6 +1,6 @@
 const Aoijs = require('aoi.js');
 const bot = new Aoijs.Bot({
-  token: "Nzg0ODY1NzI4MzIyMzM4ODE2.X8vhKw.3sHQpxCIpi-PGJ4jjzDyPLd_B0U",
+  token: "TOKEN_HERE",
   prefix: ["$getServerVar[prefix]","k."], 
   mobile: false, 
   fetchInvites: true
@@ -39,13 +39,13 @@ bot.variables({
   hex: 'A67C70',
   prefix: 'k.',
   şarkı: '',
-  afks: "", //AFK sebebi.
-  afk: "hayır", //kişi afk mı değil mi? AFK olduğu zaman evete dönüşür.
-  afkss:"", //zaman $dateStamp $parseDate ve $math kullanılan
-  afkmm:"0", //toplam etiket $sum - $sub artma azalm :bahsetme: emojili olan
-  afkc: "0", //bunu berat yaptı bilmemek
-  afkkk:"0", //toplam kişi $sum - $sub artma azalma
-  afkaa:"No one has mentioned :3" //son etiketleyen kişi tagi $userTag
+  afks: "", 
+  afk: "hayır", 
+  afkss:"", 
+  afkmm:"0", 
+  afkc: "0", 
+  afkkk:"0", 
+  afkaa:"No one has mentioned :3" 
 });
 bot.variables({
   role1: '',
