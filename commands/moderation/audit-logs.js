@@ -1,0 +1,14 @@
+module.exports = ({
+  name:"audit-logs",
+  bkz:"Denetim kaydını görüntüler",
+  code:`$title[<a:premium_1:866071664516923471> server audit logs <a:premium_1:866071664516923471>]
+$description[
+$addField[<a:dp_star6:835142297125519420> target IDs;$getAuditLogs[10;...;...;$guildID;**{target.id}**];yes]
+$addField[<a:dp_star6:835142297125519420> transactions;$getAuditLogs[10;...;...;$guildID;__{action}__];yes]
+$addField[<a:dp_star6:835142297125519420> general;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$getAuditLogs[10];- MESSAGE_DELETE;the user's message has deleted;-1];- MEMBER_ROLE_UPDATE;updated the member's role;-1];- MEMBER_BAN_ADD;the user has banned;-1];- INVITE_CREATE;created an invite link;-1];- GUILD_UPDATE;updated the server;-1];- CHANNEL_CREATE;created channel;-1];- CHANNEL_UPDATE;updated the channel;-1];- CHANNEL_DELETE;deleted the channel;-1];- CHANNEL_OVERWRITE_CREATE;added permission to the channel;-1];- CHANNEL_OVERWRITE_UPDATE;adjusted the channel's permissions;-1];- CHANNEL_OVERWRITE_DELETE;deleted permissions on the channel.;-1];- MEMBER_KICK;the member has kicked;-1];- MEMBER_PRUNE;pruned the member;-1];- MEMBER_BAN_REMOVE;removed the ban;-1];- MEMBER_UPDATE;updated the member;-1];- MEMBER_MOVE;moved the member;-1];- MEMBER_DISCONNECT;disconnected the member;-1];- BOT_ADD;added bot;-1];- ROLE_CREATE;created bot;-1];- ROLE_UPDATE;updated the role;-1];- ROLE_DELETE;deleted the role;-1];- INVITE_UPDATE;updated the invite link;-1];- INVITE_DELETE;deleted the invite link;-1];- WEBHOOK_CREATE;created webhook;-1];- WEBHOOK_UPDATE;adjusted the webhook;-1];- WEBHOOK_DELETE;deleted the webhook;-1];- EMOJI_CREATE;added an emoji;-1];- EMOJI_UPDATE;updated an emoji;-1];- EMOJI_DELETE;deleted an emoji;-1];- MESSAGE_BULK_DELETE;deleted bulk messages;-1];- MESSAGE_PIN;pinned the message;-1];- MESSAGE_UNPIN;unpinned the message;-1];- INTEGRATION_CREATE;created integration;-1];- INTEGRATION_UPDATE;updated integration;-1];- INTEGRATION_DELETE;deleted integration;-1]
+]]
+$color[$getServerVar[hex]]
+$thumbnail[$serverIcon]
+$footer[$username[$clientID] logger;$userAvatar[$clientID]]
+$onlyPerms[viewauditlog;<a:bonk:817209813419163709> You need **VIEW_AUDIT_LOGS** permission to use this command. . .]`
+})
