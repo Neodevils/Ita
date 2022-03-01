@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@akarui/aoi.music": "github:akaruidevelopment/music#main",
-    "aoi.js": "github:aoijs/aoi.js#main",
-    "ffmpeg-static": "^4.4.1",
-    "opusscript": "^0.0.8"
-  }
-}
