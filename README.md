@@ -3,3 +3,5 @@
 *Some functions __may not work__ well!!*
 
 This version has finished in October, 2021.
+
+You may need to download other packages manually.
