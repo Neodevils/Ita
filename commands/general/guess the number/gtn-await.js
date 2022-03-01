@@ -1,0 +1,26 @@
+module.exports = ({
+    name: "$alwaysExecute",
+    code: `$setservervar[winning_number;{description: <a:dp_star6:835142297125519420> Ended. start again with the gtn command.}{color:fcbfcb}]
+$setglobaluserVar[gtnwins;$sum[$getglobaluserVar[gtnwins];1]]
+$setservervar[gtntries;0]
+$setservervar[gtnstatus; <a:dp_star6:835142297125519420> Unfortunately, the last GTN round has ended.]
+$setservervar[gtn;false]
+$title[$randomText[Winner winner, chicken dinner.;Well well well.;We have a winner!;Congratulations!;You have won the GTN Event.;Woah, great job!;We're proud of you;Guess The Number has ended.;GTN;Woop woop.]]
+$description[Looks like we have a winner..]
+$addField[<a:pas10:835152237042729040> Correct Number;$getservervar[winning_number];yes]
+$addField[<a:pas10:835152237042729040> Winner;$usertag;yes]
+$addField[<a:pas10:835152237042729040> Tries;$getServerVar[gtntries];yes]
+$color[$getServerVar[hex]]
+$thumbnail[$authoravatar]
+$footer[Guess The Number! +1 gtn wins added. Check stats with the gtnStats command!]
+$onlyif[$message[1]==$getservervar[winning_number];{description: <a:dp_star6:835142297125519420> Wrong number $usertag, it's not $message}{color:fcbfcb}]
+$setServerVar[gtntries;$sum[$getServerVar[gtntries];1]]
+$setglobaluserVar[gtnattempts;$sum[$getglobaluserVar[gtnattempts];1]]
+$onlyif[$message[1]>=$getservervar[n1];{description: <a:dp_star6:835142297125519420> The number is a random number from $getservervar[n1] to $getservervar[n2]. You provided a number smaller than $getservervar[n1].}{color:ffb87d}]
+$onlyif[$message[1]<=$getservervar[n2];{description: <a:dp_star6:835142297125519420> The number is a random number from $getservervar[n1] to $getservervar[n2]. You provided a number bigger than $getservervar[n2].}{color:ffb87d}]
+$onlyif[$getservervar[winning_number]!= Ended. start again with the gtn command.;Looks like the last gtn has ended, you will have to get a staff to re-set it up.]
+$onlyif[$isNumber[$message]==true;{description: <a:dp_star6:835142297125519420> Please only enter a number. This is a Guess The Number Channel.}{color:fcbfcb}]
+$onlyif[$channelid==$getservervar[guess_the_number_channel];]
+$onlyIf[$getservervar[gtn]==true;]
+$suppressErrors`
+});
