@@ -90,31 +90,11 @@ $interactionReply[;{newEmbed:
 
 $endif
 
-$onlyBotPerms[externalemojis;{
-	"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[externalemojis;{"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}","ephemeral": "true", "options": {"interaction": true}}]
 
-$onlyBotPerms[embedlinks;{
-	"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[embedlinks;{"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.","ephemeral": "true", "options": {"interaction": true}}]
 
-$onlyIf[$guildID!=;{ 
-"embeds" : "{newEmbed:{description: <a:dp_star6:835142297125519420> This application command doesn't work in dm <a:bun_question:817219210279256066>}{color:$getServerVar[hex]}}",
-"options" : {
-"interaction" : true
-    }
-  }
-]
+$onlyIf[$guildID!=;{ "embeds" : "{newEmbed:{description: <a:dp_star6:835142297125519420> This application command doesn't work in dm <a:bun_question:817219210279256066>}{color:$getServerVar[hex]}}","options" : {"interaction" : true}}]
 
 $onlyIf[$interactionData[options._subcommand]==server;]
 `
@@ -149,31 +129,11 @@ $onlyIf[$interactionData[options._subcommand]==server;]
 
 {footer:╰・user banner\\:no banner, me suggest you banner \\:3:https://media.discordapp.net/attachments/869604846360199289/919685433766588426/1639293973080.png}}]
 
-$onlyBotPerms[externalemojis;{
-	"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[externalemojis;{"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}","ephemeral": "true", "options": {"interaction": true}}]
 
-$onlyBotPerms[embedlinks;{
-	"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[embedlinks;{"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.","ephemeral": "true", "options": {"interaction": true}}]
 
-$onlyIf[$guildID!=;{ 
-"embeds" : "{newEmbed:{description: <a:dp_star6:835142297125519420> This application command doesn't work in dm <a:bun_question:817219210279256066>}{color:$getServerVar[hex]}}",
-"options" : {
-"interaction" : true
-    }
-  }
-]
+$onlyIf[$guildID!=;{ "embeds" : "{newEmbed:{description: <a:dp_star6:835142297125519420> This application command doesn't work in dm <a:bun_question:817219210279256066>}{color:$getServerVar[hex]}}","options" : {"interaction" : true}}]
 
 $onlyIf[$interactionData[options._subcommand]==member;]
 `
@@ -202,31 +162,11 @@ $interactionReply[;{newEmbed:{title:$serverName's︱Channel Information!!}
 {color:$getServerVar[hex]}
 }]
 
-$onlyBotPerms[externalemojis;{
-	"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[externalemojis;{"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}","ephemeral": "true", "options": {"interaction": true}}]
 
-$onlyBotPerms[embedlinks;{
-	"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[embedlinks;{"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.","ephemeral": "true", "options": {"interaction": true}}]
 
-$onlyIf[$guildID!=;{ 
-"embeds" : "{newEmbed:{description: <a:dp_star6:835142297125519420> This application command doesn't work in dm <a:bun_question:817219210279256066>}{color:$getServerVar[hex]}}",
-"options" : {
-"interaction" : true
-    }
-  }
-]
+$onlyIf[$guildID!=;{ "embeds" : "{newEmbed:{description: <a:dp_star6:835142297125519420> This application command doesn't work in dm <a:bun_question:817219210279256066>}{color:$getServerVar[hex]}}","options" : {"interaction" : true}}]
 
 $onlyIf[$interactionData[options._subcommand]==channel;]
 `
