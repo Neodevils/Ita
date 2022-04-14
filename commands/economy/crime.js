@@ -12,8 +12,7 @@ $interactionReply[;{newEmbed:{description:**꒦︶︶<:team_hacker_ita:937976710
       ╰──➢__\`now you have \`__<:branch_ita:921808496767402104>__\`$numberSeparator[$getUserVar[data]]\`__
       · ─────── ·𖥸· ─────── ·**}{color:dabeff}};{actionRow:{button:$random[130;950] datas!:4:disabled_0:true:<:evil_ita:919836869263515678>}{button::2:disabled_1:true:<:infinity_ita:920415342742888508>}}]
   
-$cooldown[30m;{"embeds": "{newEmbed:{description:<a:dp_star6:835142297125519420> Let's wait **%time%** for next crime. . . <:team_hacker_ita:937976710744383578>}{color:ffaaaa}}", 
-"ephemeral": true, "options":{"interaction" : true}}]
+$cooldown[30m;{"embeds": "{newEmbed:{description:<a:dp_star6:835142297125519420> Let's wait **%time%** for next crime. . . <:team_hacker_ita:937976710744383578>}{color:ffaaaa}}", "ephemeral": true, "options":{"interaction" : true}}]
 
 $onlyBotPerms[embedlinks;{"content":"<a:dp_star6:835142297125519420> ⨯ Uhh... I need \`EMBED_LINKS\` permission.","options":{"interaction" : true}}]
 
