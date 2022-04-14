@@ -16,14 +16,7 @@ $onlyPerms[admin;{
 		}
 }]
 
-$onlyBotPerms[externalemojis;{
-	"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}",
-	"ephemeral": "true", 
-	"options": {
-	"interaction": true
-		}
-	}
-]
+$onlyBotPerms[externalemojis;{"embeds":"{newEmbed:{description:<a:dp_star6:835142297125519420> I need **\`EXTERNAL_EMOJIS\`** permission.}{color:$getServerVar[hex]}}","ephemeral": "true", "options": {"interaction": true}}]
 
 $onlyBotPerms[embedlinks;{
 	"content":"<a:dp_star6:835142297125519420> I need **\`EMBED_LINKS\`** permission to send embed message.",
