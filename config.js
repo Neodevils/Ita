@@ -4,11 +4,14 @@ module.exports = {
 	prefix: "k.",
 	intents: "all", 
   database: {
-        type: "dbdjs.mongo",
-        db: require('dbdjs.mongo'),
-        path: "./database/",
-        tables: ["main"] 
-},
+      db: require("aoi.db"),
+      type: "aoi.db",
+      path: "./database/",
+      tables: ["main"],
+      extraOptions: {
+        dbType: "KeyValue"
+      }
+	},
 	respondOnEdit: {
 		commands: true
 	},

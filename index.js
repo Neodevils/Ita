@@ -1,14 +1,3 @@
-//Setup
-const mongoose = require('mongoose')
-const mongo = require('dbdjs.mongo').default
-mongoose.connect(process.env.CLUSTER, {
- useNewUrlParser: true,
- useUnifiedTopology: true,
- useFindAndModify: false,
- keepAlive: true
-})
-
-mongo.createModel('main')
 
 const keepAlive = require('./server.js');
 
@@ -16,16 +5,6 @@ const aoijs = require('aoi.js');
 const config = require('./config.js');
 const bot = new aoijs.Bot(config.Bot);
 const fs = require('fs');
-
-const voice = new aoijs.Voice(bot, {
-  soundcloud: {
-    clientId: process.env.SC,
-  },
-  cache: {
-    cacheType: "Memory",
-    enabled: true,
-  }, 
-});
 
 //Configs
 require('./handler/status')(bot) 
